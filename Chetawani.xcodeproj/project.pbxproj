@@ -15,6 +15,18 @@
 		EEFB05121AEF08BC004C88D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEFB05111AEF08BC004C88D5 /* Images.xcassets */; };
 		EEFB05151AEF08BC004C88D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFB05131AEF08BC004C88D5 /* LaunchScreen.xib */; };
 		EEFB05211AEF08BC004C88D5 /* ChetawaniTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFB05201AEF08BC004C88D5 /* ChetawaniTests.m */; };
+		EEFB052C1AEF08FF004C88D5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFB052B1AEF08FF004C88D5 /* MapViewController.m */; };
+		EEFB053E1AEF0AC6004C88D5 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB05331AEF0AC6004C88D5 /* Icon-60.png */; };
+		EEFB053F1AEF0AC6004C88D5 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB05341AEF0AC6004C88D5 /* Icon-60@2x.png */; };
+		EEFB05401AEF0AC6004C88D5 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB05351AEF0AC6004C88D5 /* Icon-60@3x.png */; };
+		EEFB05411AEF0AC6004C88D5 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB05361AEF0AC6004C88D5 /* Icon-Small.png */; };
+		EEFB05421AEF0AC6004C88D5 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB05371AEF0AC6004C88D5 /* Icon-Small@2x.png */; };
+		EEFB05431AEF0AC6004C88D5 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB05381AEF0AC6004C88D5 /* Icon-Small@3x.png */; };
+		EEFB05441AEF0AC6004C88D5 /* Icon-Spotlight-40.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB05391AEF0AC6004C88D5 /* Icon-Spotlight-40.png */; };
+		EEFB05451AEF0AC6004C88D5 /* Icon-Spotlight-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB053A1AEF0AC6004C88D5 /* Icon-Spotlight-40@2x.png */; };
+		EEFB05461AEF0AC6004C88D5 /* Icon-Spotlight-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB053B1AEF0AC6004C88D5 /* Icon-Spotlight-40@3x.png */; };
+		EEFB05471AEF0AC6004C88D5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB053C1AEF0AC6004C88D5 /* Icon.png */; };
+		EEFB05481AEF0AC6004C88D5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFB053D1AEF0AC6004C88D5 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +55,19 @@
 		EEFB051A1AEF08BC004C88D5 /* ChetawaniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChetawaniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFB051F1AEF08BC004C88D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEFB05201AEF08BC004C88D5 /* ChetawaniTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChetawaniTests.m; sourceTree = "<group>"; };
+		EEFB052A1AEF08FF004C88D5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		EEFB052B1AEF08FF004C88D5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		EEFB05331AEF0AC6004C88D5 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "Chetawani/Icon-60.png"; sourceTree = "<group>"; };
+		EEFB05341AEF0AC6004C88D5 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@2x.png"; path = "Chetawani/Icon-60@2x.png"; sourceTree = "<group>"; };
+		EEFB05351AEF0AC6004C88D5 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@3x.png"; path = "Chetawani/Icon-60@3x.png"; sourceTree = "<group>"; };
+		EEFB05361AEF0AC6004C88D5 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Chetawani/Icon-Small.png"; sourceTree = "<group>"; };
+		EEFB05371AEF0AC6004C88D5 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Chetawani/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		EEFB05381AEF0AC6004C88D5 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@3x.png"; path = "Chetawani/Icon-Small@3x.png"; sourceTree = "<group>"; };
+		EEFB05391AEF0AC6004C88D5 /* Icon-Spotlight-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Spotlight-40.png"; path = "Chetawani/Icon-Spotlight-40.png"; sourceTree = "<group>"; };
+		EEFB053A1AEF0AC6004C88D5 /* Icon-Spotlight-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Spotlight-40@2x.png"; path = "Chetawani/Icon-Spotlight-40@2x.png"; sourceTree = "<group>"; };
+		EEFB053B1AEF0AC6004C88D5 /* Icon-Spotlight-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Spotlight-40@3x.png"; path = "Chetawani/Icon-Spotlight-40@3x.png"; sourceTree = "<group>"; };
+		EEFB053C1AEF0AC6004C88D5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Chetawani/Icon.png; sourceTree = "<group>"; };
+		EEFB053D1AEF0AC6004C88D5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Chetawani/Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +91,17 @@
 		EEFB04F51AEF08BC004C88D5 = {
 			isa = PBXGroup;
 			children = (
+				EEFB05331AEF0AC6004C88D5 /* Icon-60.png */,
+				EEFB05341AEF0AC6004C88D5 /* Icon-60@2x.png */,
+				EEFB05351AEF0AC6004C88D5 /* Icon-60@3x.png */,
+				EEFB05361AEF0AC6004C88D5 /* Icon-Small.png */,
+				EEFB05371AEF0AC6004C88D5 /* Icon-Small@2x.png */,
+				EEFB05381AEF0AC6004C88D5 /* Icon-Small@3x.png */,
+				EEFB05391AEF0AC6004C88D5 /* Icon-Spotlight-40.png */,
+				EEFB053A1AEF0AC6004C88D5 /* Icon-Spotlight-40@2x.png */,
+				EEFB053B1AEF0AC6004C88D5 /* Icon-Spotlight-40@3x.png */,
+				EEFB053C1AEF0AC6004C88D5 /* Icon.png */,
+				EEFB053D1AEF0AC6004C88D5 /* Icon@2x.png */,
 				EEFB05001AEF08BC004C88D5 /* Chetawani */,
 				EEFB051D1AEF08BC004C88D5 /* ChetawaniTests */,
 				EEFB04FF1AEF08BC004C88D5 /* Products */,
@@ -88,6 +124,8 @@
 				EEFB05061AEF08BC004C88D5 /* AppDelegate.m */,
 				EEFB05081AEF08BC004C88D5 /* MasterViewController.h */,
 				EEFB05091AEF08BC004C88D5 /* MasterViewController.m */,
+				EEFB052A1AEF08FF004C88D5 /* MapViewController.h */,
+				EEFB052B1AEF08FF004C88D5 /* MapViewController.m */,
 				EEFB050B1AEF08BC004C88D5 /* DetailViewController.h */,
 				EEFB050C1AEF08BC004C88D5 /* DetailViewController.m */,
 				EEFB050E1AEF08BC004C88D5 /* Main.storyboard */,
@@ -204,8 +242,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEFB05401AEF0AC6004C88D5 /* Icon-60@3x.png in Resources */,
+				EEFB05411AEF0AC6004C88D5 /* Icon-Small.png in Resources */,
 				EEFB05101AEF08BC004C88D5 /* Main.storyboard in Resources */,
+				EEFB05431AEF0AC6004C88D5 /* Icon-Small@3x.png in Resources */,
+				EEFB05451AEF0AC6004C88D5 /* Icon-Spotlight-40@2x.png in Resources */,
+				EEFB053F1AEF0AC6004C88D5 /* Icon-60@2x.png in Resources */,
+				EEFB05441AEF0AC6004C88D5 /* Icon-Spotlight-40.png in Resources */,
+				EEFB05471AEF0AC6004C88D5 /* Icon.png in Resources */,
+				EEFB05461AEF0AC6004C88D5 /* Icon-Spotlight-40@3x.png in Resources */,
+				EEFB05481AEF0AC6004C88D5 /* Icon@2x.png in Resources */,
 				EEFB05151AEF08BC004C88D5 /* LaunchScreen.xib in Resources */,
+				EEFB05421AEF0AC6004C88D5 /* Icon-Small@2x.png in Resources */,
+				EEFB053E1AEF0AC6004C88D5 /* Icon-60.png in Resources */,
 				EEFB05121AEF08BC004C88D5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +275,7 @@
 			files = (
 				EEFB05071AEF08BC004C88D5 /* AppDelegate.m in Sources */,
 				EEFB050A1AEF08BC004C88D5 /* MasterViewController.m in Sources */,
+				EEFB052C1AEF08FF004C88D5 /* MapViewController.m in Sources */,
 				EEFB05041AEF08BC004C88D5 /* main.m in Sources */,
 				EEFB050D1AEF08BC004C88D5 /* DetailViewController.m in Sources */,
 			);

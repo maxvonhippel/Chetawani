@@ -6,12 +6,14 @@
 //  Copyright (c) 2015 von Hippel Industries. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController
+@property (copy, nonatomic) NSString *url;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 
-@property (strong, nonatomic) id detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
 
 @end
 
