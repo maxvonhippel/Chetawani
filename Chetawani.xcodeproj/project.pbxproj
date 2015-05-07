@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE59F4A51AFAF0C400A9C24C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE59F4A41AFAF0C400A9C24C /* MessageUI.framework */; };
+		EE59F4A71AFAF31A00A9C24C /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE59F4A61AFAF31A00A9C24C /* Twitter.framework */; };
+		EE59F4AA1AFAF4DE00A9C24C /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE59F4A91AFAF4DE00A9C24C /* SocialViewController.m */; };
 		EEFB05041AEF08BC004C88D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFB05031AEF08BC004C88D5 /* main.m */; };
 		EEFB05071AEF08BC004C88D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFB05061AEF08BC004C88D5 /* AppDelegate.m */; };
 		EEFB050A1AEF08BC004C88D5 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFB05091AEF08BC004C88D5 /* MasterViewController.m */; };
@@ -40,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE59F4A41AFAF0C400A9C24C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EE59F4A61AFAF31A00A9C24C /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		EE59F4A81AFAF4DE00A9C24C /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		EE59F4A91AFAF4DE00A9C24C /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
 		EEFB04FE1AEF08BC004C88D5 /* Chetawani.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chetawani.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFB05021AEF08BC004C88D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEFB05031AEF08BC004C88D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE59F4A71AFAF31A00A9C24C /* Twitter.framework in Frameworks */,
+				EE59F4A51AFAF0C400A9C24C /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +100,8 @@
 		EEFB04F51AEF08BC004C88D5 = {
 			isa = PBXGroup;
 			children = (
+				EE59F4A61AFAF31A00A9C24C /* Twitter.framework */,
+				EE59F4A41AFAF0C400A9C24C /* MessageUI.framework */,
 				EEFB05331AEF0AC6004C88D5 /* Icon-60.png */,
 				EEFB05341AEF0AC6004C88D5 /* Icon-60@2x.png */,
 				EEFB05351AEF0AC6004C88D5 /* Icon-60@3x.png */,
@@ -129,6 +140,8 @@
 				EEFB050B1AEF08BC004C88D5 /* DetailViewController.h */,
 				EEFB050C1AEF08BC004C88D5 /* DetailViewController.m */,
 				EEFB050E1AEF08BC004C88D5 /* Main.storyboard */,
+				EE59F4A81AFAF4DE00A9C24C /* SocialViewController.h */,
+				EE59F4A91AFAF4DE00A9C24C /* SocialViewController.m */,
 				EEFB05111AEF08BC004C88D5 /* Images.xcassets */,
 				EEFB05131AEF08BC004C88D5 /* LaunchScreen.xib */,
 				EEFB05011AEF08BC004C88D5 /* Supporting Files */,
@@ -276,6 +289,7 @@
 				EEFB05071AEF08BC004C88D5 /* AppDelegate.m in Sources */,
 				EEFB050A1AEF08BC004C88D5 /* MasterViewController.m in Sources */,
 				EEFB052C1AEF08FF004C88D5 /* MapViewController.m in Sources */,
+				EE59F4AA1AFAF4DE00A9C24C /* SocialViewController.m in Sources */,
 				EEFB05041AEF08BC004C88D5 /* main.m in Sources */,
 				EEFB050D1AEF08BC004C88D5 /* DetailViewController.m in Sources */,
 			);
@@ -472,6 +486,7 @@
 				EEFB05261AEF08BC004C88D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EEFB05271AEF08BC004C88D5 /* Build configuration list for PBXNativeTarget "ChetawaniTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +495,7 @@
 				EEFB05291AEF08BC004C88D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

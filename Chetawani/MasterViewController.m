@@ -41,8 +41,35 @@
     [parser setDelegate:self];
     [parser setShouldResolveExternalEntities:NO];
     [parser parse];
+    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self selector:@selector(orientationChanged:)
+     name:UIDeviceOrientationDidChangeNotification
+     object:[UIDevice currentDevice]];
 }
 
+- (void) orientationChanged:(NSNotification *)note{
+    UIDevice * device = [UIDevice currentDevice];
+    switch(device.orientation)
+    {
+        case UIDeviceOrientationPortrait:
+            
+            break;
+        case UIDeviceOrientationPortraitUpsideDown:
+            
+            break;
+        case UIDeviceOrientationLandscapeLeft:
+            
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            
+            break;
+            
+        default:
+            break;
+    };
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -119,6 +146,7 @@
     [self.tableView reloadData];
     
 }
+
 
 
 @end

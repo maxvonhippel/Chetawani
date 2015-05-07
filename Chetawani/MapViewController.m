@@ -20,12 +20,44 @@
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [webView loadRequest:requestObj];
+    webView.delegate = self;
+    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self selector:@selector(orientationChanged:)
+     name:UIDeviceOrientationDidChangeNotification
+     object:[UIDevice currentDevice]];
+}
+- (void) orientationChanged:(NSNotification *)note{
+    UIDevice * device = [UIDevice currentDevice];
+    switch(device.orientation)
+    {
+        case UIDeviceOrientationPortrait:
+            
+            break;
+        case UIDeviceOrientationPortraitUpsideDown:
+            
+            break;
+        case UIDeviceOrientationLandscapeLeft:
+            
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            
+            break;
+            
+        default:
+            break;
+    };
+}
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [self.view viewWithTag:100].hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end

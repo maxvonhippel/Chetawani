@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jxd-g1-1F4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z8l-6N-UlI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -9,6 +9,7 @@
         <scene sceneID="6OZ-R3-JyV">
             <objects>
                 <navigationController title="Master" id="jxd-g1-1F4" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="B6V-Th-3Xy">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -19,6 +20,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsA-9Z-ae3" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-148" y="64"/>
+        </scene>
+        <!--Social View Controller-->
+        <scene sceneID="STW-qs-9Uq">
+            <objects>
+                <viewController id="CEu-pj-2NW" customClass="SocialViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6W8-YI-tnk"/>
+                        <viewControllerLayoutGuide type="bottom" id="4cT-NY-I07"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m9p-Ru-k0K">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gn1-AI-NEQ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Social Media" id="5Pw-hz-og2">
+                                        <barButtonItem key="leftBarButtonItem" title="Map" id="a2Z-fj-6TH">
+                                            <connections>
+                                                <segue destination="z8l-6N-UlI" kind="presentation" id="oAb-G2-KGs"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="News" id="u6c-gc-CFQ">
+                                            <connections>
+                                                <segue destination="R5e-kP-pdy" kind="presentation" id="fHT-Wf-hdc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vJ-nc-WCl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="30"/>
+                                <state key="normal" title="SMS for Help from Sparrow Helpline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="messageHelp:" destination="CEu-pj-2NW" eventType="touchUpInside" id="a7a-BD-5SD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6J-7X-pix">
+                                <rect key="frame" x="280" y="102" width="40" height="30"/>
+                                <state key="normal" title="Tweet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tweetHelp:" destination="CEu-pj-2NW" eventType="touchUpInside" id="Tcl-uR-5Kp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBV-t5-EWM">
+                                <rect key="frame" x="186" y="140" width="229" height="30"/>
+                                <state key="normal" title="Rebuilding Nepal Facebook Page">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToRebuildingNepalFacebookPage:" destination="CEu-pj-2NW" eventType="touchUpInside" id="JcJ-Tg-O5a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akQ-JL-LeL">
+                                <rect key="frame" x="164" y="178" width="272" height="30"/>
+                                <state key="normal" title="Nepal Earthquake 2015 Facebook Page">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToNepalEarthquakeCommunityFacebookPage:" destination="CEu-pj-2NW" eventType="touchUpInside" id="d8p-Lg-u6o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y6J-7X-pix" firstAttribute="top" secondItem="9vJ-nc-WCl" secondAttribute="bottom" constant="8" symbolic="YES" id="5eB-FQ-Paw"/>
+                            <constraint firstItem="9vJ-nc-WCl" firstAttribute="top" secondItem="Gn1-AI-NEQ" secondAttribute="bottom" id="HW5-YJ-tWn"/>
+                            <constraint firstItem="GBV-t5-EWM" firstAttribute="centerX" secondItem="y6J-7X-pix" secondAttribute="centerX" id="J7M-9h-Mko"/>
+                            <constraint firstAttribute="trailing" secondItem="Gn1-AI-NEQ" secondAttribute="trailing" id="QEN-jJ-WgU"/>
+                            <constraint firstItem="Gn1-AI-NEQ" firstAttribute="leading" secondItem="9vJ-nc-WCl" secondAttribute="leading" id="Yv1-be-6cn"/>
+                            <constraint firstItem="Gn1-AI-NEQ" firstAttribute="top" secondItem="6W8-YI-tnk" secondAttribute="bottom" id="Zpy-cm-3MX"/>
+                            <constraint firstItem="GBV-t5-EWM" firstAttribute="top" secondItem="y6J-7X-pix" secondAttribute="bottom" constant="8" symbolic="YES" id="fW9-k1-K3a"/>
+                            <constraint firstItem="GBV-t5-EWM" firstAttribute="centerX" secondItem="akQ-JL-LeL" secondAttribute="centerX" id="gjf-ZF-Hva"/>
+                            <constraint firstItem="akQ-JL-LeL" firstAttribute="top" secondItem="GBV-t5-EWM" secondAttribute="bottom" constant="8" symbolic="YES" id="iv0-kE-hSz"/>
+                            <constraint firstItem="9vJ-nc-WCl" firstAttribute="centerX" secondItem="y6J-7X-pix" secondAttribute="centerX" id="sCW-rN-R03"/>
+                            <constraint firstItem="Gn1-AI-NEQ" firstAttribute="leading" secondItem="m9p-Ru-k0K" secondAttribute="leading" id="sXJ-8I-b6L"/>
+                            <constraint firstItem="Gn1-AI-NEQ" firstAttribute="trailing" secondItem="9vJ-nc-WCl" secondAttribute="trailing" id="xlV-lh-rE4"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIA-im-NiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1587" y="768"/>
         </scene>
         <!--Master-->
         <scene sceneID="CO3-RU-bbZ">
@@ -63,14 +152,21 @@
                                 <segue destination="z8l-6N-UlI" kind="presentation" id="jzS-SA-mAT"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Social" id="tOL-rf-3dX">
+                            <connections>
+                                <action selector="HelpMessage:" destination="R5e-kP-pdy" id="aWf-j7-3mq"/>
+                                <segue destination="CEu-pj-2NW" kind="presentation" id="RFi-NM-GIL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Pdz-Ps-Emq" id="d17-Lb-CNL"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ce-eU-ysY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605" y="64"/>
+            <point key="canvasLocation" x="579" y="64"/>
         </scene>
         <!--Detail-->
         <scene sceneID="dLF-lJ-rJc">
@@ -84,20 +180,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FzW-jO-v6c">
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" paginationMode="topToBottom" translatesAutoresizingMaskIntoConstraints="NO" id="FzW-jO-v6c">
                                 <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" calendarEvent="YES"/>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Article" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aN3-9x-QHN">
+                                <rect key="frame" x="243" y="353" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="FzW-jO-v6c" secondAttribute="trailing" id="2DV-xg-9zk"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="FzW-jO-v6c" secondAttribute="bottom" constant="-64" id="Omb-pp-FsI"/>
-                            <constraint firstItem="FzW-jO-v6c" firstAttribute="leading" secondItem="ph6-Wa-Uje" secondAttribute="leading" id="hOz-AK-LCN"/>
-                            <constraint firstItem="FzW-jO-v6c" firstAttribute="top" secondItem="4px-qK-F5z" secondAttribute="bottom" id="uvO-Ov-hwi"/>
+                            <constraint firstAttribute="trailing" secondItem="FzW-jO-v6c" secondAttribute="trailing" id="93i-mL-Eov"/>
+                            <constraint firstItem="aN3-9x-QHN" firstAttribute="centerX" secondItem="FzW-jO-v6c" secondAttribute="centerX" id="JvX-X4-ecj"/>
+                            <constraint firstItem="FzW-jO-v6c" firstAttribute="leading" secondItem="ph6-Wa-Uje" secondAttribute="leading" id="O1J-t4-Qzm"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FzW-jO-v6c" secondAttribute="bottom" constant="-64" id="Roo-DN-qQb"/>
+                            <constraint firstItem="Xex-mB-anq" firstAttribute="top" secondItem="aN3-9x-QHN" secondAttribute="bottom" constant="226" id="b3Q-gp-Kg6"/>
+                            <constraint firstItem="FzW-jO-v6c" firstAttribute="top" secondItem="4px-qK-F5z" secondAttribute="bottom" constant="44" id="cVK-kj-JGH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="News" id="l6t-Og-d5i"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="webView" destination="FzW-jO-v6c" id="mge-wg-mid"/>
                     </connections>
@@ -131,21 +237,36 @@
                                                 <segue destination="jxd-g1-1F4" kind="presentation" id="SOx-2M-x7z"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Social" id="a1y-OS-d3Y">
+                                            <connections>
+                                                <action selector="HelpMessage:" destination="z8l-6N-UlI" id="aVh-cb-Ew9"/>
+                                                <segue destination="CEu-pj-2NW" kind="presentation" id="zyG-ma-TP4"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Map" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZr-8N-JUC">
+                                <rect key="frame" x="250" y="321" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jgu-rJ-WZx" firstAttribute="trailing" secondItem="YoD-SU-EoJ" secondAttribute="trailing" id="98M-dB-4qZ"/>
-                            <constraint firstItem="YoD-SU-EoJ" firstAttribute="top" secondItem="Jgu-rJ-WZx" secondAttribute="bottom" id="LjF-zd-flb"/>
-                            <constraint firstItem="Jgu-rJ-WZx" firstAttribute="leading" secondItem="sav-aH-C7n" secondAttribute="leading" id="Q7S-IX-c4a"/>
-                            <constraint firstItem="Jgu-rJ-WZx" firstAttribute="top" secondItem="JQG-eP-nSg" secondAttribute="bottom" id="Wrz-vG-Cdu"/>
-                            <constraint firstItem="Jgu-rJ-WZx" firstAttribute="leading" secondItem="YoD-SU-EoJ" secondAttribute="leading" id="aG9-e3-0Ub"/>
-                            <constraint firstAttribute="trailing" secondItem="Jgu-rJ-WZx" secondAttribute="trailing" id="hLo-oc-Rp7"/>
-                            <constraint firstItem="YoD-SU-EoJ" firstAttribute="bottom" secondItem="U3H-mp-jY3" secondAttribute="top" id="zKz-bb-ytX"/>
+                            <constraint firstItem="YoD-SU-EoJ" firstAttribute="bottom" secondItem="U3H-mp-jY3" secondAttribute="top" id="05a-sj-2jI"/>
+                            <constraint firstItem="YoD-SU-EoJ" firstAttribute="leading" secondItem="sav-aH-C7n" secondAttribute="leading" id="9S3-p6-Tru"/>
+                            <constraint firstItem="Jgu-rJ-WZx" firstAttribute="centerX" secondItem="gZr-8N-JUC" secondAttribute="centerX" id="JUY-aT-mQo"/>
+                            <constraint firstItem="Jgu-rJ-WZx" firstAttribute="trailing" secondItem="YoD-SU-EoJ" secondAttribute="trailing" id="LWr-zn-hFI"/>
+                            <constraint firstItem="U3H-mp-jY3" firstAttribute="top" secondItem="gZr-8N-JUC" secondAttribute="bottom" constant="258" id="a25-dU-j46"/>
+                            <constraint firstAttribute="trailing" secondItem="YoD-SU-EoJ" secondAttribute="trailing" id="bbo-vL-2i9"/>
+                            <constraint firstItem="Jgu-rJ-WZx" firstAttribute="leading" secondItem="YoD-SU-EoJ" secondAttribute="leading" id="ik9-5w-gp2"/>
+                            <constraint firstItem="YoD-SU-EoJ" firstAttribute="top" secondItem="Jgu-rJ-WZx" secondAttribute="bottom" id="tSz-BN-wwv"/>
+                            <constraint firstItem="Jgu-rJ-WZx" firstAttribute="top" secondItem="JQG-eP-nSg" secondAttribute="bottom" id="zpW-LU-UbZ"/>
                         </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="webView" destination="YoD-SU-EoJ" id="oxy-xr-ZfG"/>
                     </connections>
@@ -155,4 +276,9 @@
             <point key="canvasLocation" x="936" y="758"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jzS-SA-mAT"/>
+        <segue reference="fHT-Wf-hdc"/>
+        <segue reference="zyG-ma-TP4"/>
+    </inferredMetricsTieBreakers>
 </document>
